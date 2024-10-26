@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 16:43:49.991491",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_rpic",
+  "item",
+  "column_break_ezlg",
+  "status",
+  "column_break_nlrg",
+  "qty",
+  "is_company_owner",
+  "is_personal_owner"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "column_break_rpic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "column_break_ezlg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nWorks\nDoesn't work"
+  },
+  {
+   "fieldname": "column_break_nlrg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "is_company_owner",
+   "fieldtype": "Check",
+   "label": "Is Company Owner"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "is_personal_owner",
+   "fieldtype": "Check",
+   "label": "Is Personal Owner"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-13 12:22:11.172937",
+ "modified_by": "Administrator",
+ "module": "ALFOUAD",
+ "name": "List of Apartment Properties",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

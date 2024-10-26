@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-11 12:10:18.945246",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_vovo",
+  "date",
+  "section_break_gpip",
+  "project",
+  "customer",
+  "column_break_jpzt",
+  "complaint_receipt_mode",
+  "section_break_ggsf",
+  "contact_person_name",
+  "column_break_ejbj",
+  "contact_person_phone",
+  "column_break_qdtf",
+  "contact_person_email",
+  "section_break_pbus",
+  "complaint_subject",
+  "column_break_jlts",
+  "attachments",
+  "section_break_gpjl",
+  "reason_of_complaint",
+  "root_cause_and_corrective_actions",
+  "section_break_jfhg",
+  "table_zgul",
+  "section_break_qimc",
+  "execution_persons_signature",
+  "column_break_agsn",
+  "date_of_actual_completion_of_actions"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "CUST-COM-OP.YY.-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_vovo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gpip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_jpzt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "complaint_receipt_mode",
+   "fieldtype": "Select",
+   "label": "Complaint Receipt Mode",
+   "options": "\nVerbally\nWhatsApp\nPhone Call\nVisit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ggsf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name "
+  },
+  {
+   "fieldname": "column_break_ejbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person_phone",
+   "fieldtype": "Phone",
+   "label": "Contact Person Phone"
+  },
+  {
+   "fieldname": "column_break_qdtf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person_email",
+   "fieldtype": "Data",
+   "label": "Contact Person Email"
+  },
+  {
+   "fieldname": "section_break_pbus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "complaint_subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Complaint Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jlts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments "
+  },
+  {
+   "fieldname": "section_break_gpjl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason_of_complaint",
+   "fieldtype": "Text Editor",
+   "label": "Reason of Complaint",
+   "reqd": 1
+  },
+  {
+   "fieldname": "root_cause_and_corrective_actions",
+   "fieldtype": "Text Editor",
+   "label": "Root Cause and Corrective Actions"
+  },
+  {
+   "fieldname": "section_break_jfhg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_zgul",
+   "fieldtype": "Table",
+   "options": "Person in Charge of Implementing the Actions"
+  },
+  {
+   "fieldname": "section_break_qimc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "execution_persons_signature",
+   "fieldtype": "Signature",
+   "label": "Execution Person's Signature",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_agsn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_actual_completion_of_actions",
+   "fieldtype": "Date",
+   "label": "Date of Actual Completion of Actions",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-13 12:22:11.875639",
+ "modified_by": "Administrator",
+ "module": "ALFOUAD",
+ "name": "Customer Complaint Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

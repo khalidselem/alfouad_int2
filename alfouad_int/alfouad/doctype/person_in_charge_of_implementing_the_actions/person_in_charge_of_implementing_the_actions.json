@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-11 12:49:35.158071",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "person_in_charge_of_implementing_the_actions",
+  "column_break_emlh",
+  "department"
+ ],
+ "fields": [
+  {
+   "fieldname": "person_in_charge_of_implementing_the_actions",
+   "fieldtype": "Link",
+   "label": "Person in Charge of Implementing the Actions",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_emlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "person_in_charge_of_implementing_the_actions.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-13 12:22:10.921298",
+ "modified_by": "Administrator",
+ "module": "ALFOUAD",
+ "name": "Person in Charge of Implementing the Actions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:apartment_location",
+ "creation": "2024-09-12 15:46:52.340900",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "apartment_details_section",
+  "apartment_location",
+  "contact_start_date",
+  "column_break_tind",
+  "address",
+  "contract_end_date",
+  "column_break_okcg",
+  "contract_duration_copy",
+  "tenant_details_section",
+  "tenant",
+  "landlord",
+  "column_break_yfct",
+  "id_number",
+  "landlord_id_number",
+  "column_break_sdfi",
+  "mobile",
+  "landlord_mobile",
+  "more_information_section",
+  "column_break_nmqu",
+  "purpose_of_use",
+  "invoices",
+  "rental_amount",
+  "insurance_amount",
+  "rental_method",
+  "payment_method",
+  "column_break_ohxz",
+  "penalty_clause",
+  "list_of_apartment_properties_section",
+  "table_twbp"
+ ],
+ "fields": [
+  {
+   "fieldname": "apartment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Apartment Details"
+  },
+  {
+   "fieldname": "apartment_location",
+   "fieldtype": "Data",
+   "label": "Apartment Location",
+   "unique": 1
+  },
+  {
+   "fieldname": "contact_start_date",
+   "fieldtype": "Date",
+   "label": "Contact Start Date"
+  },
+  {
+   "fieldname": "column_break_tind",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "label": "Contract End Date"
+  },
+  {
+   "fieldname": "column_break_okcg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_duration_copy",
+   "fieldtype": "Int",
+   "label": "Contract Duration"
+  },
+  {
+   "fieldname": "tenant_details_section",
+   "fieldtype": "Section Break",
+   "label": " Tenant and Landlord Details"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Data",
+   "label": "Tenant"
+  },
+  {
+   "fieldname": "landlord",
+   "fieldtype": "Data",
+   "label": "Landlord"
+  },
+  {
+   "fieldname": "column_break_yfct",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "Tenant ID Number"
+  },
+  {
+   "fieldname": "landlord_id_number",
+   "fieldtype": "Data",
+   "label": "Landlord ID Number"
+  },
+  {
+   "fieldname": "column_break_sdfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Phone",
+   "label": "Tenant Mobile"
+  },
+  {
+   "fieldname": "landlord_mobile",
+   "fieldtype": "Phone",
+   "label": "Landlord Mobile "
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "column_break_nmqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purpose_of_use",
+   "fieldtype": "Data",
+   "label": "Purpose of Use"
+  },
+  {
+   "fieldname": "invoices",
+   "fieldtype": "Select",
+   "label": "Invoices",
+   "options": "\nTenant\nLandlord"
+  },
+  {
+   "fieldname": "rental_amount",
+   "fieldtype": "Currency",
+   "label": "Rental Amount"
+  },
+  {
+   "fieldname": "insurance_amount",
+   "fieldtype": "Currency",
+   "label": "Insurance Amount"
+  },
+  {
+   "fieldname": "rental_method",
+   "fieldtype": "Select",
+   "label": "Rental Method",
+   "options": "\nMonthly\nQuarterly\nHalf-Yearly\nYearly"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "\nBank\nCash"
+  },
+  {
+   "fieldname": "column_break_ohxz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penalty_clause",
+   "fieldtype": "Text Editor",
+   "label": "Penalty Clause"
+  },
+  {
+   "fieldname": "list_of_apartment_properties_section",
+   "fieldtype": "Section Break",
+   "label": "List of Apartment Properties"
+  },
+  {
+   "fieldname": "table_twbp",
+   "fieldtype": "Table",
+   "label": "List",
+   "options": "List of Apartment Properties"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-13 12:22:12.445405",
+ "modified_by": "Administrator",
+ "module": "ALFOUAD",
+ "name": "Apartments Management",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

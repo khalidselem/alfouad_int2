@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-17 13:34:59.290403",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_satisfaction_questionnaire_section",
+  "naming_series",
+  "how_long_have_you_used_our_services",
+  "data_zeum",
+  "if_not_satisfied_would_you_share_your_reasons_why",
+  "section_break_fpjd",
+  "name1",
+  "column_break_uhap",
+  "position"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_satisfaction_questionnaire_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Satisfaction Questionnaire"
+  },
+  {
+   "bold": 1,
+   "default": "CUS-SAT-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Series",
+   "options": "CUS-SAT-.YYYY.-"
+  },
+  {
+   "fieldname": "how_long_have_you_used_our_services",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "How long have you used our services?",
+   "options": "\n0 to 12 months\n1 to 3 years\nMore than 3 years",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_zeum",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Overall, how satisfied are you with our Performance/Service?",
+   "options": "\nVery satisfied (80-100%)\nSatisfied (60-80%)\nNeutral (40-60%)\nDissatisfied (20-40%)\nVery Dissatisfied (0-20%)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "if_not_satisfied_would_you_share_your_reasons_why",
+   "fieldtype": "Text Editor",
+   "label": "If not satisfied, would you share your reasons why?  "
+  },
+  {
+   "fieldname": "section_break_fpjd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Company Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_uhap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-13 12:22:11.670317",
+ "modified_by": "Administrator",
+ "module": "ALFOUAD",
+ "name": "Customer Satisfaction Survey",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

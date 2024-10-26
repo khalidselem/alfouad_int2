@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-09 09:55:12.757615",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_8b24",
+  "naming_series",
+  "course_name",
+  "details_of_training",
+  "target__of_training",
+  "small_text_odcb",
+  "q3",
+  "trainees_names",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_8b24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "TR-COU-####"
+  },
+  {
+   "bold": 1,
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Course Name",
+   "reqd": 1
+  },
+  {
+   "description": "Please give brief details of the training (e.g. course title, outline contents, etc.) below: \n",
+   "fieldname": "details_of_training",
+   "fieldtype": "Small Text",
+   "label": "Details of training "
+  },
+  {
+   "description": "Describe how this training or event will help you in your job and/or support the mission of your project or the Department. Be specific as to anticipated skills, knowledge and/or professional development.  Use the back of this form if necessary\n",
+   "fieldname": "target__of_training",
+   "fieldtype": "Small Text",
+   "label": "Target  of training "
+  },
+  {
+   "fieldname": "small_text_odcb",
+   "fieldtype": "Select",
+   "label": "What is the best time for this group to attend training?",
+   "options": "\nMorning Session\nAfternoon Session"
+  },
+  {
+   "bold": 1,
+   "fieldname": "q3",
+   "fieldtype": "Text",
+   "label": "When would you like to begin this training?  Provide two dates: "
+  },
+  {
+   "fieldname": "trainees_names",
+   "fieldtype": "Table",
+   "label": "Trainees Names",
+   "options": "Trainees"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Training Request Application",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-13 12:22:10.081227",
+ "modified_by": "Administrator",
+ "module": "ALFOUAD",
+ "name": "Training Request Application",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
